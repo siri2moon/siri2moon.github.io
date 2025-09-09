@@ -15,12 +15,16 @@ export const greetings: GreetingsType = {
   name: 'Binh Nguyen',
   title: "Hi all, I'm Binh",
   descriptions: [
-      "I'm a manager and passionate full stack web developer having an experience of web applications " +
-      "with PHP, Ruby, NestJS, React.js, Next.js, VueJs. ",
-      "I've worked as web developer for 8 years already. And 6 years for leading development team." +
-      " I have strong knowledge of the PHP, OOP, Javascript and how identify and implements\n" +
-      "most common design pattern.",
-      "I am open to learn and implement any new technologies"
+      "Dynamic and results-driven Full-Stack Developer with over 10 years of experience" +
+      "designing and deploying robust web applications, complemented by specialized expertise in" +
+      "AI-driven solutions and Web3 technologies.\n" +
+      "Proficient in leveraging AWS and Google Cloud to architect scalable, cloud-native" +
+      "infrastructure, with a proven track record of delivering high-performance systems. Skilled in" +
+      "modern frameworks and DevOps practices, I excel in building end-to-end solutions that" +
+      "prioritize innovation, security, and user experience.\n" +
+      "A collaborative and approachable team player, I am passionate about embracing cutting-" +
+      "edge technologies and continuously enhancing my technical expertise to drive business" +
+      "success in fast-paced, tech-forward environments.",
   ],
 
   resumeLink:
@@ -34,11 +38,11 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://siri2moon.github.io/',
+  url: 'https://cv.siri2moon.com',
   linkedin: 'https://www.linkedin.com/in/siri2moon/',
   github: 'https://github.com/siri2moon',
   instagram: 'https://www.instagram.com/siri2moon',
-  facebook: 'https://www.facebook.com/binhnguyenit',
+  facebook: 'https://www.facebook.com/siri2moon',
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -46,7 +50,7 @@ export const skillsSection: SkillsSectionType = {
   subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
   data: [
     {
-      title: 'Full Stack Development',
+      title: 'Full-Stack Development',
       lottieAnimationFile: '/lottie/skills/fullstack.json', // Path of Lottie Animation JSON File
       skills: [
         emoji(
@@ -216,39 +220,36 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Team Manager and Scrum master',
-    company: 'NEOLAB Vietnam',
-    companyLogo: '/img/exp/neolab.png',
-    date: 'Aug 2016 – May 2023',
-    desc: 'Worked closely with senior developer and learned advanced project management skills',
+    role: "Team Manager and Scrum master",
+    company: "NEOLAB Vietnam",
+    companyLogo: "/img/exp/neolab.png",
+    date: "Aug 2016 – Apr, 2024",
+    desc: "Collaborated with senior developers to enhance project management expertise, driving efficient delivery of complex web applications.",
     descBullets: [
-    	"Manage web project with 15 - 20 members as Team manager position",
-    	"Meet with PO to gather requirements, design site, and outline schedules.",
-    	"Training fresher",
+      "Led web development projects as Scrum Master, managing cross-functional teams of 15–20" +
+      "members to deliver scalable, high-quality solutions.",
+      "Partnered with Product Owners to gather requirements, design user-centric websites, and" +
+      "establish clear project timelines, ensuring alignment with business goals.",
+      "Mentored and trained junior developers, fostering technical growth and promoting best practices in full-stack.",
     ],
   },
   {
-    role: 'Wordpress developer',
-    company: 'NTC Solutions Company',
-    companyLogo: '/img/exp/wp.png',
-    date: 'Apr 2016 – Jul 2016',
-    desc: 'This is startup company. Building websites with wordpress CMS.\n' +
-        'Designed websites for clients on a contact basic',
+    role: "Junior Software Engineer",
+    company: "FPT Software Danang",
+    companyLogo: "/img/exp/fpt.png",
+    date: "Mar, 2016 - Aug, 2016",
+    desc:
+      "Partnered with Japanese clients to define project scopes and conceptualize innovative software" +
+      "solutions, fostering cross-cultural collaboration and technical precision.\n" +
+      "Managed project schedules effectively, ensuring on-time delivery of content and maintaining high" +
+      "standards of quality, contributing to client trust and project success.",
   },
   {
-    role: 'Junior Software Engineer',
-    company: 'FPT Software Danang',
-    companyLogo: '/img/exp/fpt.png',
-    date: 'Otc 2015 - Mar 2016',
-    desc: 'Worked at FPT Software company with Japanese customers. Developed project scope and created concepts\n' +
-        'Maintained schedules and assured on-time delivery of content',
-  },
-  {
-    role: 'Teacher',
-    company: 'VinaEnter',
-    companyLogo: '/img/exp/vinaenter.png',
-    date: 'Jul 2014 - Oct 2015',
-    desc: 'Join teaching at the VinaEnter Center with PHP training courses and Java web training courses\n',
+    role: "Teacher",
+    company: "VinaEnter",
+    companyLogo: "/img/exp/vinaenter.png",
+    date: "Jun 2015 - Mar, 2016",
+    desc: "Taught PHP and Java web development training courses.\n",
   },
 ];
 
@@ -269,18 +270,23 @@ export const showContactUs: boolean = false;
 export const seoData: SEODataType = {
   title: 'Binh Nguyen',
   description:
-    'A passionate Full Stack Web Developer and Team manager.',
+    'Fullstack & AI Engineer',
   author: 'Binh Nguyen',
   image: 'https://avatars.githubusercontent.com/u/18733630?v1',
-  url: 'http://siri2moon.github.io',
+  url: 'https://cv.siri2moon.com',
   keywords: [
+    'Fullstack',
+    'AI Engineer',
     'Binh',
     'Binh Nguyen',
     'siri2moon',
-    'binhnguyen.it',
+    'siri2moon.com',
     'Binh IT Da Nang',
     'Portfolio',
     'Binh Nguyen Portfolio ',
     'Binh Portfolio',
+    'Fullstack & AI Engineer',
+    'Fullstack',
+    'AI Engineer',
   ],
 };
