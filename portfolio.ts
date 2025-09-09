@@ -206,15 +206,13 @@ export const SkillBars: SkillBarsType[] = [
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: 'Danang University of Education',
-    subHeader: 'Bachelor of Information Technology',
-    duration: 'September 2011 - April 2015',
-    desc: 'I graduated in bachelor of Information Technology',
-    grade: 'Grade A',
-    descBullets: [
-      'PHP developer',
-      'Javascript developer',
-    ],
+    schoolName:
+      "University of Technology and Education - The University of Danang",
+    subHeader: "Bachelor of Information Technology",
+    duration: "September 2011 - April 2015",
+    desc: "I graduated in bachelor of Information Technology",
+    grade: "Grade A",
+    descBullets: ["PHP developer", "Javascript developer"],
   },
 ];
 
