@@ -12,25 +12,25 @@ import {
 } from './types/sections';
 
 export const greetings: GreetingsType = {
-  name: 'Binh Nguyen',
+  name: "Binh Nguyen",
   title: "Hi all, I'm Binh - Fullstack & AI Engineer",
   descriptions: [
-      "Dynamic and results-driven Full-Stack Developer with over 10 years of experience" +
+    "Dynamic and results-driven Full-Stack Developer with over 10 years of experience" +
       "designing and deploying robust web applications, complemented by specialized expertise in" +
       "AI-driven solutions and Web3 technologies.\n" +
       "",
-      "Proficient in leveraging AWS and Google Cloud to architect scalable, cloud-native" +
+    "Proficient in leveraging AWS and Google Cloud to architect scalable, cloud-native" +
       "infrastructure, with a proven track record of delivering high-performance systems. Skilled in" +
       "modern frameworks and DevOps practices, I excel in building end-to-end solutions that" +
       "prioritize innovation, security, and user experience.\n" +
       "",
-      "A collaborative and approachable team player, I am passionate about embracing cutting-" +
+    "A collaborative and approachable team player, I am passionate about embracing cutting-" +
       "edge technologies and continuously enhancing my technical expertise to drive business" +
       "success in fast-paced, tech-forward environments.",
   ],
 
   resumeLink:
-    'https://drive.google.com/file/d/1Mdlrxw67Sys4mgJmBUZMhSVurN5GP3St/view?usp=sharing',
+    "https://drive.google.com/file/d/1atNz1zNLi6hR_qzu178BblmL4fzm8see/view?usp=sharing",
 };
 
 export const openSource = {
@@ -363,9 +363,9 @@ export const experience: ExperienceType[] = [
     desc: "",
     descBullets: [
       "Partnered with Japanese clients to define project scopes and conceptualize innovative software" +
-      "solutions, fostering cross-cultural collaboration and technical precision.",
+        "solutions, fostering cross-cultural collaboration and technical precision.",
       "Managed project schedules effectively, ensuring on-time delivery of content and maintaining high" +
-      "standards of quality, contributing to client trust and project success.",
+        "standards of quality, contributing to client trust and project success.",
     ],
   },
   {
@@ -373,7 +373,11 @@ export const experience: ExperienceType[] = [
     company: "VinaEnter",
     companyLogo: "/img/exp/vinaenter.png",
     date: "Jun 2015 - Mar, 2016",
-    desc: "Taught PHP and Java web development training courses.\n",
+    desc: "",
+    descBullets: [
+      "Taught PHP and Java web development training courses.",
+      "Helped IT students prepare for graduation by providing solid programming foundation knowledge to equip them for entering the workforce at various companies."
+    ],
   },
 ];
 

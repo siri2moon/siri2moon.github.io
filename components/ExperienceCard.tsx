@@ -49,15 +49,15 @@ const ExperienceCard = ({
               {role}
             </CardSubtitle>
             <CardSubtitle>{date}</CardSubtitle>
-            <CardText tag="div" className="description my-3 text-left flex-grow-1">
+            <CardText tag="div" className="description w-full my-3 text-left flex-grow-1">
               {desc}
-              <ul>
-                {descBullets
-                  ? descBullets.map((desc) => {
-                      return <li key={desc}>{desc}</li>;
-                    })
-                  : null}
-              </ul>
+              {descBullets && descBullets.length > 0 && (
+                <ul className="list-disc w-full">
+                  {descBullets.map((desc) => {
+                    return <li key={desc}>{desc}</li>;
+                  })}
+                </ul>
+              )}
             </CardText>
           </CardBody>
         </Card>
