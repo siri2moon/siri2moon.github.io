@@ -55,11 +55,11 @@ export const skillsSection: SkillsSectionType = {
       title: "AI (Artificial Intelligence)",
       lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ Multi-agent AI orchestration with LangGraph"),
+        emoji("⚡ Multi-agent AI orchestration with LangGraph."),
         emoji(
           "⚡ Multi-Provider LLM Support: OpenAI, Anthropic, Google (Gemini), AWS Bedrock"
         ),
-        emoji("⚡ Advanced RAG System: OpenSearch vector database"),
+        emoji("⚡ Advanced RAG System: OpenSearch vector database."),
         emoji("⚡ Real-time web search integration (DuckDuckGo)"),
         emoji("⚡ Enterprise document analysis and summarization"),
         emoji("⚡ Streaming chat completions with multiple AI providers"),
