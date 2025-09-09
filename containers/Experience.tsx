@@ -18,7 +18,7 @@ const Experience = () => {
               <h4 className="display-3 text-info">Experience</h4>
             </div>
           </div>
-          <Row className="row-grid align-items-start">
+          <Row className="row-grid align-items-stretch">
             {experience.map((data, i) => {
               return <ExperienceCard key={i} {...data} />;
             })}

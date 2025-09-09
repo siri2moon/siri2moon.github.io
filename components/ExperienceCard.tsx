@@ -19,13 +19,13 @@ const ExperienceCard = ({
   descBullets,
 }: ExperienceType) => {
   return (
-    <Col lg="6">
+    <Col lg="6" className="d-flex mb-4">
       <Fade left duration={2000}>
         <Card
-          style={{ flex: 1 }}
-          className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
+          className="shadow-lg--hover shadow border-0 text-center rounded w-100 d-flex flex-column"
+          style={{ height: '100%' }}
         >
-          <CardBody className="">
+          <CardBody className="d-flex flex-column h-100">
             <img
               src={companyLogo}
               style={{
@@ -49,7 +49,7 @@ const ExperienceCard = ({
               {role}
             </CardSubtitle>
             <CardSubtitle>{date}</CardSubtitle>
-            <CardText tag="div" className="description my-3 text-left">
+            <CardText tag="div" className="description my-3 text-left flex-grow-1">
               {desc}
               <ul>
                 {descBullets
