@@ -15,8 +15,8 @@ export const greetings: GreetingsType = {
   name: "Binh Nguyen",
   title: "Hi all, I'm Binh - Fullstack & AI Engineer",
   descriptions: [
-    "Dynamic and results-driven Full-Stack Developer with over 10 years of experience" +
-      "designing and deploying robust web applications, complemented by specialized expertise in" +
+    "Dynamic and results-driven Full-Stack Developer with over 10 years of experience " +
+      "designing and deploying robust web applications, complemented by specialized expertise in " +
       "AI-driven solutions and Web3 technologies.\n" +
       "",
     "Proficient in leveraging AWS and Google Cloud to architect scalable, cloud-native" +
@@ -396,25 +396,25 @@ export const showContactUs: boolean = false;
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: 'Binh Nguyen',
+  title: "Binh Nguyen - Fullstack & AI Engineer",
   description:
-    'Fullstack & AI Engineer',
-  author: 'Binh Nguyen',
-  image: 'https://avatars.githubusercontent.com/u/18733630?v1',
-  url: 'https://cv.siri2moon.com',
+    "Hi all, I'm Binh - a passionate Fullstack & AI Engineer. Dynamic and results-driven Full-Stack Developer with over 10 years of experience designing and deploying robust web applications, complemented by specialized expertise in AI-driven solutions and Web3 technologies.",
+  author: "Binh Nguyen",
+  image: "https://avatars.githubusercontent.com/u/18733630?v1",
+  url: "https://cv.siri2moon.com",
   keywords: [
-    'Fullstack',
-    'AI Engineer',
-    'Binh',
-    'Binh Nguyen',
-    'siri2moon',
-    'siri2moon.com',
-    'Binh IT Da Nang',
-    'Portfolio',
-    'Binh Nguyen Portfolio ',
-    'Binh Portfolio',
-    'Fullstack & AI Engineer',
-    'Fullstack',
-    'AI Engineer',
+    "Fullstack",
+    "AI Engineer",
+    "Binh",
+    "Binh Nguyen",
+    "siri2moon",
+    "siri2moon.com",
+    "Binh IT Da Nang",
+    "Portfolio",
+    "Binh Nguyen Portfolio ",
+    "Binh Portfolio",
+    "Fullstack & AI Engineer",
+    "Fullstack",
+    "AI Engineer",
   ],
 };
