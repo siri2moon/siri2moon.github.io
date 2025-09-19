@@ -1,9 +1,9 @@
-import { Icon } from '@iconify/react';
-import React, { Fragment } from 'react';
-import Fade from 'react-reveal/Fade';
-import { Col, Container, Row, UncontrolledTooltip } from 'reactstrap';
-import DisplayLottie from '../components/DisplayLottie';
-import { skillsSection } from '../portfolio';
+import { Icon } from "@iconify/react";
+import React, { Fragment } from "react";
+import Fade from "react-reveal/Fade";
+import { Col, Container, Row, UncontrolledTooltip } from "reactstrap";
+import DisplayLottie from "../components/DisplayLottie";
+import { skillsSection } from "../portfolio";
 
 const Skills = () => {
   return (
@@ -28,7 +28,7 @@ const Skills = () => {
                         <Fragment key={i}>
                           <div
                             className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
-                            id={skill.skillName.replace(/\s/g, '')}
+                            id={skill.skillName.replace(/\s/g, "")}
                           >
                             <Icon
                               icon={skill.fontAwesomeClassName}
@@ -38,7 +38,7 @@ const Skills = () => {
                           <UncontrolledTooltip
                             delay={0}
                             placement="bottom"
-                            target={skill.skillName.replace(/\s/g, '')}
+                            target={skill.skillName.replace(/\s/g, "")}
                           >
                             {skill.skillName}
                           </UncontrolledTooltip>

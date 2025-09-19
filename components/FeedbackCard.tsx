@@ -1,7 +1,7 @@
-import React from 'react';
-import { Card, CardBody } from 'reactstrap';
-import Fade from 'react-reveal/Fade';
-import { FeedbackType } from '../types/sections';
+import React from "react";
+import { Card, CardBody } from "reactstrap";
+import Fade from "react-reveal/Fade";
+import { FeedbackType } from "../types/sections";
 
 const FeedbackCard = ({ name, feedback }: FeedbackType) => {
   return (

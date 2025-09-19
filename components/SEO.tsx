@@ -1,6 +1,6 @@
-import React from 'react';
-import Head from 'next/head';
-import { seoData } from '../portfolio';
+import React from "react";
+import Head from "next/head";
+import { seoData } from "../portfolio";
 
 function SEO() {
   return (

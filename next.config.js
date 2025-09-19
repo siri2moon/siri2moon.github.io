@@ -1,7 +1,7 @@
-const isGithubActions = process.env.GH_ACTIONS || true
+const isGithubActions = process.env.GH_ACTIONS || true;
 
-let assetPrefix = '/'
-let basePath = '/'
+let assetPrefix = "/";
+let basePath = "/";
 
 // if (isGithubActions) {
 //   const repo = process.env.GH_REPOSITORY.replace(/.*?\//, '')
@@ -13,7 +13,7 @@ let basePath = '/'
 module.exports = {
   reactStrictMode: false,
   images: {
-    loader: 'imgix',
-    path: 'siri2moon.imgix.net',
+    loader: "imgix",
+    path: "siri2moon.imgix.net",
   },
 };

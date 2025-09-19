@@ -1,8 +1,8 @@
-import React from 'react';
-import { SkillBars } from '../portfolio';
-import { Container, Row, Progress, Col } from 'reactstrap';
-import Fade from 'react-reveal/Fade';
-import GreetingLottie from '../components/DisplayLottie';
+import React from "react";
+import { SkillBars } from "../portfolio";
+import { Container, Row, Progress, Col } from "reactstrap";
+import Fade from "react-reveal/Fade";
+import GreetingLottie from "../components/DisplayLottie";
 
 const Proficiency = () => {
   return (

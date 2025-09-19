@@ -1,7 +1,7 @@
-import React from 'react';
-import { experience } from '../portfolio';
-import { Container, Row } from 'reactstrap';
-import ExperienceCard from '../components/ExperienceCard';
+import React from "react";
+import { experience } from "../portfolio";
+import { Container, Row } from "reactstrap";
+import ExperienceCard from "../components/ExperienceCard";
 
 const Experience = () => {
   return (

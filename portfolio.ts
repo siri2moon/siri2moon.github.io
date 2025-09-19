@@ -1,4 +1,4 @@
-import emoji from 'react-easy-emoji';
+import emoji from "react-easy-emoji";
 import {
   EducationType,
   ExperienceType,
@@ -9,7 +9,7 @@ import {
   SEODataType,
   SocialLinksType,
   GreetingsType,
-} from './types/sections';
+} from "./types/sections";
 
 export const greetings: GreetingsType = {
   name: "Binh Nguyen",
@@ -34,17 +34,17 @@ export const greetings: GreetingsType = {
 };
 
 export const openSource = {
-  githubUserName: 'siri2moon',
+  githubUserName: "siri2moon",
 };
 
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://cv.siri2moon.com',
-  linkedin: 'https://www.linkedin.com/in/siri2moon/',
-  github: 'https://github.com/siri2moon',
-  instagram: 'https://www.instagram.com/siri2moon',
-  facebook: 'https://www.facebook.com/siri2moon',
+  url: "https://cv.siri2moon.com",
+  linkedin: "https://www.linkedin.com/in/siri2moon/",
+  github: "https://github.com/siri2moon",
+  instagram: "https://www.instagram.com/siri2moon",
+  facebook: "https://www.facebook.com/siri2moon",
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -295,24 +295,24 @@ export const skillsSection: SkillsSectionType = {
 
 export const SkillBars: SkillBarsType[] = [
   {
-    Stack: 'AI & Machine Learning', //Insert stack or technology you have experience in
-    progressPercentage: '80', //Insert relative proficiency in percentage
+    Stack: "AI & Machine Learning", //Insert stack or technology you have experience in
+    progressPercentage: "80", //Insert relative proficiency in percentage
   },
   {
-    Stack: 'Backend Development',
-    progressPercentage: '90',
+    Stack: "Backend Development",
+    progressPercentage: "90",
   },
   {
-    Stack: 'Cloud & DevOps',
-    progressPercentage: '88',
+    Stack: "Cloud & DevOps",
+    progressPercentage: "88",
   },
   {
-    Stack: 'Frontend Development',
-    progressPercentage: '85',
+    Stack: "Frontend Development",
+    progressPercentage: "85",
   },
   {
-    Stack: 'Web3 & Blockchain',
-    progressPercentage: '75',
+    Stack: "Web3 & Blockchain",
+    progressPercentage: "75",
   },
 ];
 
@@ -376,17 +376,47 @@ export const experience: ExperienceType[] = [
     desc: "",
     descBullets: [
       "Taught PHP and Java web development training courses.",
-      "Helped IT students prepare for graduation by providing solid programming foundation knowledge to equip them for entering the workforce at various companies."
+      "Helped IT students prepare for graduation by providing solid programming foundation knowledge to equip them for entering the workforce at various companies.",
     ],
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: 'Please take a look at my CV',
-    desc: '',
-    link: greetings.resumeLink,
-  }
+    name: "AI Enterprise Services Platform",
+    desc: "Built a production-ready, enterprise-grade AI services platform using FastAPI, LangChain/LangGraph for multi-agent orchestration, and advanced RAG architecture with OpenSearch. Features multi-provider LLM support (OpenAI, Anthropic, Google Gemini, AWS Bedrock) with real-time web search integration and streaming chat completions.",
+    // github: "https://github.com/siri2moon",
+  },
+  {
+    name: "Redbrick Web3 Gaming Platform",
+    desc: "Engineered a scalable Web3 gaming platform within the Redbrick ecosystem using Node.js, NestJS, and React.js on AWS. Developed decentralized in-game functionalities, Telegram mini-apps, and the Redbrick Studio platform to enhance user engagement in the Web3 gaming space.",
+    // github: "https://github.com/siri2moon",
+  },
+  {
+    name: "Fantasy Lottery & NFT Staking Platform",
+    desc: "Designed and developed a user-centric lottery web application integrated with NFT staking platform. Leveraged blockchain technology for secure, transparent prize distribution and asset management, utilizing Node.js and React.js to interact with smart contracts.",
+    // github: "https://github.com/siri2moon",
+  },
+  {
+    name: "Remote Examination System (Telehealth)",
+    desc: "Led backend development for a telehealth platform enabling real-time online doctor consultations. Built scalable, cloud-native backend using Node.js, Express.js, and AWS (EC2, RDS, Lambda) with PostgreSQL database and WebSocket for real-time communication.",
+    // github: "https://github.com/siri2moon",
+  },
+  {
+    name: "Wakumo - Part-Time Job Platform",
+    desc: "Directed server-side development for a job-matching platform streamlining part-time employment searches. Built with Python FastAPI, React.js frontend integration, Google Cloud Platform (Cloud Functions, Firestore), and MongoDB for optimized job-matching functionality.",
+    // github: "https://github.com/siri2moon",
+  },
+  {
+    name: "DMM Auto - Car Valuation System",
+    desc: "Guided server-side development for an innovative platform automating vehicle valuations and sales. Integrated advanced valuation algorithms and secure transaction modules using Node.js, NestJS, AWS (S3, DynamoDB, API Gateway), and MySQL with custom valuation algorithms.",
+    // github: "https://github.com/siri2moon",
+  },
+  {
+    name: "Wedding Ceremony & Banquet Booking System",
+    desc: "Led server-side development for a comprehensive wedding booking platform streamlining ceremony and banquet planning. Built robust reservation system with integrated scheduling using Node.js, Express.js, AWS, MongoDB, and RESTful APIs.",
+    // github: "https://github.com/siri2moon",
+  },
 ];
 
 export const feedbacks: FeedbackType[] = [];

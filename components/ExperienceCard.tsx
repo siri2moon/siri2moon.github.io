@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Card,
   CardBody,
@@ -6,9 +6,9 @@ import {
   CardSubtitle,
   CardText,
   Col,
-} from 'reactstrap';
-import Fade from 'react-reveal/Fade';
-import { ExperienceType } from '../types/sections';
+} from "reactstrap";
+import Fade from "react-reveal/Fade";
+import { ExperienceType } from "../types/sections";
 
 const ExperienceCard = ({
   companyLogo,
@@ -23,21 +23,21 @@ const ExperienceCard = ({
       <Fade left duration={2000}>
         <Card
           className="shadow-lg--hover shadow border-0 text-center rounded w-100 d-flex flex-column"
-          style={{ height: '100%' }}
+          style={{ height: "100%" }}
         >
           <CardBody className="d-flex flex-column h-100">
             <img
               src={companyLogo}
               style={{
-                objectFit: 'cover',
+                objectFit: "cover",
                 left: 0,
                 right: 0,
-                top: '7rem',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                width: '8rem',
-                height: '8rem',
-                borderRadius: '50%',
+                top: "7rem",
+                marginLeft: "auto",
+                marginRight: "auto",
+                width: "8rem",
+                height: "8rem",
+                borderRadius: "50%",
               }}
               className="shadow mb-3"
               alt={companyLogo}
@@ -49,7 +49,10 @@ const ExperienceCard = ({
               {role}
             </CardSubtitle>
             <CardSubtitle>{date}</CardSubtitle>
-            <CardText tag="div" className="description w-full my-3 text-left flex-grow-1">
+            <CardText
+              tag="div"
+              className="description w-full my-3 text-left flex-grow-1"
+            >
               {desc}
               {descBullets && descBullets.length > 0 && (
                 <ul className="list-disc w-full">
