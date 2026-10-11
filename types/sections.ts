@@ -60,6 +60,18 @@ export type EducationType = {
   descBullets?: string[];
 };
 
+// * CERTIFICATION SECTION
+
+export type CertificationType = {
+  name: string;
+  issuer: string;
+  issued: string;
+  expires?: string;
+  validationNumber?: string;
+  verifyLink?: string;
+  certificateLink?: string;
+};
+
 // * EXPERIENCE SECTION
 
 export type ExperienceType = {

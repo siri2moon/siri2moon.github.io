@@ -1,6 +1,7 @@
 import React from "react";
 import EducationCard from "../components/EducationCard";
-import { educationInfo } from "../portfolio";
+import CertificationCard from "../components/CertificationCard";
+import { certifications, educationInfo } from "../portfolio";
 import { Container, Row, Col } from "reactstrap";
 
 const Education = () => {
@@ -15,7 +16,11 @@ const Education = () => {
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-white">Education</h4>
+              <h4 className="display-3 text-white">
+                {certifications.length
+                  ? "Education & Certifications"
+                  : "Education"}
+              </h4>
             </div>
           </div>
           <Row className="row-grid align-items-center">
@@ -23,6 +28,13 @@ const Education = () => {
               return (
                 <Col className="order-lg-1" lg="6" key={info.schoolName}>
                   <EducationCard {...info} />
+                </Col>
+              );
+            })}
+            {certifications.map((info) => {
+              return (
+                <Col className="order-lg-1" lg="6" key={info.name}>
+                  <CertificationCard {...info} />
                 </Col>
               );
             })}

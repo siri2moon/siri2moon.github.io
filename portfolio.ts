@@ -1,5 +1,6 @@
 import emoji from "react-easy-emoji";
 import {
+  CertificationType,
   EducationType,
   ExperienceType,
   FeedbackType,
@@ -13,24 +14,19 @@ import {
 
 export const greetings: GreetingsType = {
   name: "Binh Nguyen",
-  title: "Hi all, I'm Binh - Fullstack & AI Engineer",
+  title: "Hi all, I'm Binh - Senior Full-Stack & AI Engineer",
   descriptions: [
-    "Dynamic and results-driven Full-Stack Developer with over 10 years of experience " +
-      "designing and deploying robust web applications, complemented by specialized expertise in " +
-      "AI-driven solutions and Web3 technologies.\n" +
-      "",
-    "Proficient in leveraging AWS and Google Cloud to architect scalable, cloud-native" +
-      "infrastructure, with a proven track record of delivering high-performance systems. Skilled in" +
-      "modern frameworks and DevOps practices, I excel in building end-to-end solutions that" +
-      "prioritize innovation, security, and user experience.\n" +
-      "",
-    "A collaborative and approachable team player, I am passionate about embracing cutting-" +
-      "edge technologies and continuously enhancing my technical expertise to drive business" +
-      "success in fast-paced, tech-forward environments.",
+    "Software engineer with 10+ years of experience, currently the technical lead of an " +
+      "enterprise AI platform serving corporate customers in Korea and Vietnam.",
+    "I deliver products end to end — the AI services, the backend APIs, the web application, " +
+      "and the cloud infrastructure underneath them. My focus for the past two years has been " +
+      "applied AI: intelligent search across a company's private documents, AI assistants that " +
+      "answer with verifiable sources, and the data pipelines that keep them fast at scale.",
+    "Paired with deep AWS and Kubernetes expertise, this lets me deliver systems that are " +
+      "intelligent, secure, and economical to run in production.",
   ],
 
-  resumeLink:
-    "https://drive.google.com/file/d/1atNz1zNLi6hR_qzu178BblmL4fzm8see/view?usp=sharing",
+  resumeLink: "/resumes/binhnx-resume-2026-08.pdf",
 };
 
 export const openSource = {
@@ -49,20 +45,25 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "SENIOR FULL-STACK & AI ENGINEER — FROM AI SERVICES TO CLOUD INFRASTRUCTURE",
   data: [
     {
-      title: "AI (Artificial Intelligence)",
+      title: "AI & Machine Learning",
       lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ Multi-agent AI orchestration with LangGraph."),
         emoji(
-          "⚡ Multi-Provider LLM Support: OpenAI, Anthropic, Google (Gemini), AWS Bedrock"
+          "⚡ Retrieval-Augmented Generation (RAG) and LLM application architecture"
         ),
-        emoji("⚡ Advanced RAG System: OpenSearch vector database."),
-        emoji("⚡ Real-time web search integration (DuckDuckGo)"),
-        emoji("⚡ Enterprise document analysis and summarization"),
-        emoji("⚡ Streaming chat completions with multiple AI providers"),
+        emoji("⚡ AI agents & tool calling with LangChain / LangGraph"),
+        emoji(
+          "⚡ Hybrid search: vector embeddings, keyword search, re-ranking and page-level citations"
+        ),
+        emoji(
+          "⚡ Multi-provider LLMs: OpenAI, Anthropic Claude, Google Gemini, AWS Bedrock"
+        ),
+        emoji("⚡ Document AI & OCR, prompt engineering"),
+        emoji("⚡ AI usage & cost tracking per customer and per model"),
       ],
       softwareSkills: [
         {
@@ -86,12 +87,70 @@ export const skillsSection: SkillsSectionType = {
           fontAwesomeClassName: "logos:opensearch",
         },
         {
-          skillName: "LangGraph",
+          skillName: "LangChain / LangGraph",
+          fontAwesomeClassName: "logos:python",
+        },
+      ],
+    },
+    {
+      title: "Backend Development",
+      lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
+      skills: [
+        emoji("⚡ High-performance APIs with Python FastAPI"),
+        emoji("⚡ Node.js services with NestJS and Express in TypeScript"),
+        emoji("⚡ REST APIs, Server-Sent Events (SSE) and WebSocket streaming"),
+        emoji("⚡ Message queues & event-driven architecture"),
+        emoji("⚡ Microservices, SOLID principles and design patterns"),
+        emoji("⚡ Enterprise applications with PHP Laravel"),
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
           fontAwesomeClassName: "logos:python",
         },
         {
-          skillName: "DuckDuckGo",
-          fontAwesomeClassName: "logos:duckduckgo",
+          skillName: "FastAPI",
+          fontAwesomeClassName: "logos:fastapi",
+        },
+        {
+          skillName: "NodeJS",
+          fontAwesomeClassName: "logos:nodejs-icon",
+        },
+        {
+          skillName: "NestJs",
+          fontAwesomeClassName: "logos:nestjs",
+        },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassName: "logos:typescript-icon",
+        },
+        {
+          skillName: "PHP",
+          fontAwesomeClassName: "logos:php",
+        },
+        {
+          skillName: "Laravel",
+          fontAwesomeClassName: "logos:laravel",
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassName: "logos:postgresql",
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassName: "logos:mysql",
+        },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassName: "logos:mongodb",
+        },
+        {
+          skillName: "Redis",
+          fontAwesomeClassName: "logos:redis",
+        },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassName: "logos:firebase",
         },
       ],
     },
@@ -99,14 +158,10 @@ export const skillsSection: SkillsSectionType = {
       title: "Frontend Development",
       lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji(
-          "⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"
-        ),
-        emoji("⚡ Building responsive static websites using Next.js"),
+        emoji("⚡ Building web applications with Next.js and React"),
+        emoji("⚡ Streaming AI answers live to the browser"),
         emoji("⚡ Monorepo management with Turborepo"),
-        emoji(
-          "⚡ Modern React development with hooks and functional components"
-        ),
+        emoji("⚡ Type-safe UI development with TypeScript"),
       ],
       softwareSkills: [
         {
@@ -137,66 +192,58 @@ export const skillsSection: SkillsSectionType = {
           skillName: "Turborepo",
           fontAwesomeClassName: "logos:turborepo",
         },
-        {
-          skillName: "Redux",
-          fontAwesomeClassName: "logos:redux",
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassName: "logos:npm-icon",
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassName: "logos:yarn",
-        },
       ],
     },
     {
-      title: "Backend Development",
-      lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
+      title: "Cloud & CI/CD",
+      lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ SOLID principles and design patterns implementation"),
-        emoji("⚡ Building RESTful APIs with NestJS framework"),
-        emoji("⚡ High-performance APIs with Python FastAPI framework"),
-        emoji("⚡ Enterprise applications with PHP Laravel framework"),
-        emoji("⚡ Microservices architecture and API design"),
+        emoji("⚡ AWS Certified Developer – Associate"),
+        emoji(
+          "⚡ AWS: EKS, ECS, EC2, Lambda, S3, CloudFront, Aurora RDS, ElastiCache, SQS, KMS, CloudWatch, IAM"
+        ),
+        emoji(
+          "⚡ Infrastructure as code with Terraform, reusable across environments"
+        ),
+        emoji(
+          "⚡ Kubernetes & Docker with auto-scaling that follows real demand"
+        ),
+        emoji("⚡ CI/CD with GitHub Actions, Jenkins and CircleCI"),
+        emoji("⚡ Monitoring & alerting, backup and disaster recovery"),
+        emoji("⚡ Cloud cost management — around 20% savings delivered"),
       ],
       softwareSkills: [
         {
-          skillName: "NodeJS",
-          fontAwesomeClassName: "logos:nodejs-icon",
+          skillName: "AWS",
+          fontAwesomeClassName: "logos:aws",
         },
         {
-          skillName: "NestJs",
-          fontAwesomeClassName: "logos:nestjs",
+          skillName: "Google Cloud",
+          fontAwesomeClassName: "logos:google-cloud",
         },
         {
-          skillName: "Python",
-          fontAwesomeClassName: "logos:python",
+          skillName: "Terraform",
+          fontAwesomeClassName: "logos:terraform",
         },
         {
-          skillName: "FastAPI",
-          fontAwesomeClassName: "logos:fastapi",
+          skillName: "Kubernetes",
+          fontAwesomeClassName: "logos:kubernetes",
         },
         {
-          skillName: "PHP",
-          fontAwesomeClassName: "logos:php",
+          skillName: "Docker",
+          fontAwesomeClassName: "logos:docker-icon",
         },
         {
-          skillName: "Laravel",
-          fontAwesomeClassName: "logos:laravel",
+          skillName: "Github Actions",
+          fontAwesomeClassName: "logos:github-actions",
         },
         {
-          skillName: "PostgreSQL",
-          fontAwesomeClassName: "logos:postgresql",
+          skillName: "Jenkins",
+          fontAwesomeClassName: "logos:jenkins",
         },
         {
-          skillName: "MongoDB",
-          fontAwesomeClassName: "logos:mongodb",
-        },
-        {
-          skillName: "Redis",
-          fontAwesomeClassName: "logos:redis",
+          skillName: "CircleCI",
+          fontAwesomeClassName: "logos:circleci",
         },
       ],
     },
@@ -205,12 +252,10 @@ export const skillsSection: SkillsSectionType = {
       lottieAnimationFile: "/lottie/skills/ethereum.json", // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          "⚡ Utilizing Node.js and React.js to interact with blockchain smart contracts"
+          "⚡ Web stores and game platforms with blockchain in-game assets"
         ),
-        emoji("⚡ Enhancing dApp functionality and user experience"),
-        emoji(
-          "⚡ Building decentralized applications with modern web technologies"
-        ),
+        emoji("⚡ NFT staking and transparent on-chain prize distribution"),
+        emoji("⚡ Telegram mini-apps for wider distribution and engagement"),
       ],
       softwareSkills: [
         {
@@ -233,61 +278,6 @@ export const skillsSection: SkillsSectionType = {
           skillName: "Ethereum",
           fontAwesomeClassName: "logos:ethereum",
         },
-        {
-          skillName: "Metamask",
-          fontAwesomeClassName: "logos:metamask-icon",
-        },
-      ],
-    },
-    {
-      title: "Cloud & CI/CD",
-      lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
-      skills: [
-        emoji(
-          "⚡ Comprehensive AWS services: EC2, S3, Lambda, CloudFront, CloudWatch, ECS, CodeBuild, OpenSearch, Bedrock"
-        ),
-        emoji("⚡ Google Cloud Platform deployment and management"),
-        emoji("⚡ Infrastructure as Code with Terraform"),
-        emoji("⚡ Automated CI/CD pipelines with Autobuild and GitHub Actions"),
-        emoji("⚡ Container orchestration and microservices deployment"),
-      ],
-      softwareSkills: [
-        {
-          skillName: "AWS",
-          fontAwesomeClassName: "logos:aws",
-        },
-        {
-          skillName: "Google Cloud",
-          fontAwesomeClassName: "logos:google-cloud",
-        },
-        {
-          skillName: "Terraform",
-          fontAwesomeClassName: "logos:terraform",
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassName: "logos:docker-icon",
-        },
-        {
-          skillName: "Kubernetes",
-          fontAwesomeClassName: "logos:kubernetes",
-        },
-        {
-          skillName: "Github Actions",
-          fontAwesomeClassName: "logos:github-actions",
-        },
-        {
-          skillName: "Autobuild",
-          fontAwesomeClassName: "logos:github",
-        },
-        {
-          skillName: "Nginx",
-          fontAwesomeClassName: "logos:nginx",
-        },
-        {
-          skillName: "Sentry",
-          fontAwesomeClassName: "logos:sentry-icon",
-        },
       ],
     },
   ],
@@ -295,24 +285,24 @@ export const skillsSection: SkillsSectionType = {
 
 export const SkillBars: SkillBarsType[] = [
   {
-    Stack: "AI & Machine Learning", //Insert stack or technology you have experience in
-    progressPercentage: "80", //Insert relative proficiency in percentage
+    Stack: "AI & LLM Applications", //Insert stack or technology you have experience in
+    progressPercentage: "88", //Insert relative proficiency in percentage
   },
   {
     Stack: "Backend Development",
+    progressPercentage: "92",
+  },
+  {
+    Stack: "Cloud Infrastructure & DevOps",
     progressPercentage: "90",
   },
   {
-    Stack: "Cloud & DevOps",
+    Stack: "Technical Leadership",
     progressPercentage: "88",
   },
   {
     Stack: "Frontend Development",
-    progressPercentage: "85",
-  },
-  {
-    Stack: "Web3 & Blockchain",
-    progressPercentage: "75",
+    progressPercentage: "82",
   },
 ];
 
@@ -321,101 +311,109 @@ export const educationInfo: EducationType[] = [
     schoolName:
       "University of Technology and Education - The University of Danang",
     subHeader: "Bachelor of Information Technology",
-    duration: "September 2011 - April 2015",
+    duration: "2011 - 2015",
     desc: "I graduated in bachelor of Information Technology",
     grade: "Grade A",
     descBullets: ["PHP", "NodeJS", "Python", "Javascript"],
   },
 ];
 
+export const certifications: CertificationType[] = [
+  {
+    name: "AWS Certified Developer – Associate",
+    issuer: "Amazon Web Services",
+    issued: "Sep 10, 2026",
+    expires: "Sep 10, 2029",
+    validationNumber: "b8683cf1f1034db7851f288e6591ecc5",
+    verifyLink: "https://aws.amazon.com/verification",
+    certificateLink: "/certificates/aws-certificate-dva-binhnx.pdf",
+  },
+];
+
 export const experience: ExperienceType[] = [
   {
-    role: "Fullstack & AI Engineer",
+    role: "Senior Full-Stack & AI Engineer",
     company: "Uranus Software - Da Nang",
     companyLogo: "/img/exp/uranus.jpg",
     date: "Apr, 2024 – Present",
-    desc: "Leading development of enterprise-grade AI services and Web3 gaming platforms, driving innovation in cloud-native solutions and decentralized applications.",
+    desc: "Technical lead of an enterprise AI platform that lets organizations search and work with their internal documents through AI assistants. Accountable for the AI services, backend, web application and cloud infrastructure — from architecture through production operations and cost.",
     descBullets: [
-      "Architected enterprise-grade AI services platform using Python, FastAPI, and LangChain, integrating multi-provider LLM support (OpenAI, Anthropic, Google Gemini, AWS Bedrock) and advanced RAG architecture with OpenSearch for scalable, cloud-native solutions.",
-      "Developed scalable Web3 gaming platform for Redbrick ecosystem, leveraging Node.js, NestJS, React.js, and AWS to deliver decentralized in-game functionalities, Telegram mini-apps, and Redbrick Studio platform, enhancing user engagement.",
-      "Mentored junior developers, fostering technical growth in modern frameworks, AI, and Web3 technologies, while ensuring alignment with business objectives and industry best practices.",
+      "Architected the AI document search: documents are automatically read, understood and indexed so employees ask questions in natural language and receive answers cited to the exact page of the source file.",
+      "Designed an AI assistant platform where non-technical users configure their own assistants — instructions, tools, AI model and permitted documents — with answers streamed live to the browser.",
+      "Enabled assistants to produce PDF, Word, Excel, PowerPoint and chart deliverables, generated in a secure isolated environment and validated before reaching the user.",
+      "Architected the document processing pipeline for scale — parallel stages, auto-scaling workers and exactly-once processing — validated at thousands of documents with a 100% success rate.",
+      "Delivered trustworthy answer quality with hybrid keyword-and-meaning search, re-ranking, Korean/English language tuning and page-level citations.",
+      "Unified multiple AI providers behind a single gateway with automatic failover, response caching and usage logging, plus per-customer AI usage and cost reporting.",
+      "Designed the enterprise security model: employees retrieve only documents they are authorized to access, permission changes apply instantly, credentials are encrypted and access is audited.",
+      "Own the complete AWS infrastructure as code (Terraform) and led two zero-downtime migrations of the full production platform, including the move to Kubernetes.",
+      "Drove a cloud cost-efficiency program delivering around 20% savings through consolidation, scheduled automation and storage lifecycle policies.",
+      "Authored architecture and operations documentation; mentor engineers across backend, AI and infrastructure.",
     ],
   },
   {
-    role: "Team Manager and Scrum master",
-    company: "NEOLAB Vietnam",
+    role: "Team Manager & Scrum Master",
+    company: "Neolab Vietnam - Da Nang",
     companyLogo: "/img/exp/neolab.png",
-    date: "Aug 2016 – Apr, 2024",
-    desc: "Collaborated with senior developers to enhance project management expertise, driving efficient delivery of complex web applications.",
+    date: "Aug, 2016 – Apr, 2024",
+    desc: "Led cross-functional teams of 15 to 20 engineers delivering web and mobile platforms for Japanese enterprise clients.",
     descBullets: [
-      "Led web development projects as Scrum Master, managing cross-functional teams of 15–20" +
-        "members to deliver scalable, high-quality solutions.",
-      "Partnered with Product Owners to gather requirements, design user-centric websites, and" +
-        "establish clear project timelines, ensuring alignment with business goals.",
-      "Mentored and trained junior developers, fostering technical growth and promoting best practices in full-stack.",
+      "Owned backend architecture as Server Leader and ran agile delivery as Scrum Master.",
+      "Partnered with Product Owners on requirements, scope and timelines.",
+      "Led backend and delivery for telehealth, job-matching, vehicle valuation and banquet booking platforms.",
+      "Mentored junior developers into independent full-stack engineers.",
     ],
   },
   {
     role: "Junior Software Engineer",
-    company: "FPT Software Danang",
+    company: "FPT Software - Da Nang",
     companyLogo: "/img/exp/fpt.png",
     date: "Mar, 2016 - Aug, 2016",
     desc: "",
     descBullets: [
-      "Partnered with Japanese clients to define project scopes and conceptualize innovative software" +
-        "solutions, fostering cross-cultural collaboration and technical precision.",
-      "Managed project schedules effectively, ensuring on-time delivery of content and maintaining high" +
-        "standards of quality, contributing to client trust and project success.",
+      "Partnered with Japanese clients to define project scope and shape technical solutions.",
+      "Managed delivery schedules and quality standards.",
     ],
   },
   {
-    role: "Teacher",
-    company: "VinaEnter",
+    role: "Instructor",
+    company: "VinaEnter Academy - Da Nang",
     companyLogo: "/img/exp/vinaenter.png",
-    date: "Jun 2015 - Mar, 2016",
+    date: "Jun, 2015 - Mar, 2016",
     desc: "",
     descBullets: [
-      "Taught PHP and Java web development training courses.",
-      "Helped IT students prepare for graduation by providing solid programming foundation knowledge to equip them for entering the workforce at various companies.",
+      "Taught PHP and Java web development, preparing IT students for their first engineering roles.",
     ],
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: "AI Enterprise Services Platform",
-    desc: "Built a production-ready, enterprise-grade AI services platform using FastAPI, LangChain/LangGraph for multi-agent orchestration, and advanced RAG architecture with OpenSearch. Features multi-provider LLM support (OpenAI, Anthropic, Google Gemini, AWS Bedrock) with real-time web search integration and streaming chat completions.",
-    // github: "https://github.com/siri2moon",
+    name: "Enterprise AI Platform",
+    desc: "Enterprise AI platform for corporate customers in Korea and Vietnam: intelligent search across private documents, configurable AI assistants that answer with page-level citations, document-generating agents, Slack and Google Drive integrations, and a multi-provider AI gateway. Python, FastAPI, LangChain / LangGraph, NestJS, Next.js, PostgreSQL, Redis, vector databases, AWS, Kubernetes, Terraform.",
   },
   {
-    name: "Redbrick Web3 Gaming Platform",
-    desc: "Engineered a scalable Web3 gaming platform within the Redbrick ecosystem using Node.js, NestJS, and React.js on AWS. Developed decentralized in-game functionalities, Telegram mini-apps, and the Redbrick Studio platform to enhance user engagement in the Web3 gaming space.",
-    // github: "https://github.com/siri2moon",
+    name: "Web3 Gaming & Web Store Platform",
+    desc: "Scalable web store and game platform integrating blockchain for decentralized in-game assets and transactions, alongside Telegram mini-apps that widened distribution and user engagement. Node.js, NestJS, React.js, Web3, AWS.",
   },
   {
-    name: "Fantasy Lottery & NFT Staking Platform",
-    desc: "Designed and developed a user-centric lottery web application integrated with NFT staking platform. Leveraged blockchain technology for secure, transparent prize distribution and asset management, utilizing Node.js and React.js to interact with smart contracts.",
-    // github: "https://github.com/siri2moon",
+    name: "NFT Staking & Lottery Platform",
+    desc: "User-facing lottery application with NFT staking, using blockchain for transparent prize distribution and asset management. Node.js, React.js, Web3, smart contracts.",
   },
   {
-    name: "Remote Examination System (Telehealth)",
-    desc: "Led backend development for a telehealth platform enabling real-time online doctor consultations. Built scalable, cloud-native backend using Node.js, Express.js, and AWS (EC2, RDS, Lambda) with PostgreSQL database and WebSocket for real-time communication.",
-    // github: "https://github.com/siri2moon",
+    name: "Telehealth Consultation Platform",
+    desc: "Real-time online doctor consultations for Next Innovation Operation Inc. Led backend development and the delivery process, designing a cloud-native backend serving iOS, Android and web clients. Node.js, Express.js, AWS, PostgreSQL, WebSocket, Docker, CI/CD.",
   },
   {
-    name: "Wakumo - Part-Time Job Platform",
-    desc: "Directed server-side development for a job-matching platform streamlining part-time employment searches. Built with Python FastAPI, React.js frontend integration, Google Cloud Platform (Cloud Functions, Firestore), and MongoDB for optimized job-matching functionality.",
-    // github: "https://github.com/siri2moon",
+    name: "Wakumo - Job-Matching Platform",
+    desc: "Part-time employment marketplace. Led server-side design and implementation, engineered for high-volume traffic and fast application processing. Python, FastAPI, React.js, Google Cloud, MongoDB, GitHub Actions.",
   },
   {
-    name: "DMM Auto - Car Valuation System",
-    desc: "Guided server-side development for an innovative platform automating vehicle valuations and sales. Integrated advanced valuation algorithms and secure transaction modules using Node.js, NestJS, AWS (S3, DynamoDB, API Gateway), and MySQL with custom valuation algorithms.",
-    // github: "https://github.com/siri2moon",
+    name: "DMM Auto - Vehicle Valuation & Sales Platform",
+    desc: "Directed backend development, delivering valuation algorithms and secure transaction modules that streamlined the sales workflow end to end. Node.js, NestJS, AWS, MySQL, Jenkins, Terraform.",
   },
   {
-    name: "Wedding Ceremony & Banquet Booking System",
-    desc: "Led server-side development for a comprehensive wedding booking platform streamlining ceremony and banquet planning. Built robust reservation system with integrated scheduling using Node.js, Express.js, AWS, MongoDB, and RESTful APIs.",
-    // github: "https://github.com/siri2moon",
+    name: "Wedding & Banquet Booking Platform",
+    desc: "Reservation system with integrated scheduling for venues, vendors and customers. Node.js, Express.js, MongoDB, AWS, Docker, CircleCI.",
   },
 ];
 
@@ -426,9 +424,9 @@ export const showContactUs: boolean = false;
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: "Binh Nguyen - Fullstack & AI Engineer",
+  title: "Binh Nguyen - Senior Full-Stack & AI Engineer",
   description:
-    "Hi all, I'm Binh - a passionate Fullstack & AI Engineer. Dynamic and results-driven Full-Stack Developer with over 10 years of experience designing and deploying robust web applications, complemented by specialized expertise in AI-driven solutions and Web3 technologies.",
+    "Hi all, I'm Binh - Senior Full-Stack & AI Engineer with 10+ years of experience, technical lead of an enterprise AI platform. I deliver AI services, backend APIs, web applications and AWS / Kubernetes infrastructure end to end.",
   author: "Binh Nguyen",
   image: "https://avatars.githubusercontent.com/u/18733630?v1",
   url: "https://cv.siri2moon.com",
@@ -443,8 +441,11 @@ export const seoData: SEODataType = {
     "Portfolio",
     "Binh Nguyen Portfolio ",
     "Binh Portfolio",
-    "Fullstack & AI Engineer",
-    "Fullstack",
-    "AI Engineer",
+    "Senior Full-Stack & AI Engineer",
+    "RAG",
+    "LLM",
+    "AWS",
+    "AWS Certified Developer",
+    "Kubernetes",
   ],
 };
