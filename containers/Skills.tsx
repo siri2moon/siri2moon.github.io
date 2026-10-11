@@ -24,11 +24,14 @@ const Skills = () => {
                   <h3 className="h3 mb-2">{section.title}</h3>
                   <div className="d-flex justify-content-center flex-wrap mb-2">
                     {section.softwareSkills.map((skill, i) => {
+                      // skillName can contain characters that are invalid in a
+                      // CSS selector (e.g. "/"), which crashes the tooltip lookup.
+                      const tooltipId = `skill-${index}-${i}`;
                       return (
                         <Fragment key={i}>
                           <div
                             className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
-                            id={skill.skillName.replace(/\s/g, "")}
+                            id={tooltipId}
                           >
                             <Icon
                               icon={skill.fontAwesomeClassName}
@@ -38,7 +41,7 @@ const Skills = () => {
                           <UncontrolledTooltip
                             delay={0}
                             placement="bottom"
-                            target={skill.skillName.replace(/\s/g, "")}
+                            target={tooltipId}
                           >
                             {skill.skillName}
                           </UncontrolledTooltip>
